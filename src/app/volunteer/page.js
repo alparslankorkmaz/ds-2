@@ -1,274 +1,70 @@
-"use client";
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import Link from "next/link";
 
 export default function volunteer() {
-  const [state, handleSubmit] = useForm(process.env.formKey);
-  if (state.succeeded) {
-    return (
-      <>
-        <div
-          id="volunteer-form"
-          className="py-20 bg-gradient-to-br from-ds-purple to-ds-light-green font-semibold"
-        >
-          <h3 className="shadow-xl py-5 uppercase text-5xl md:text-7xl font-bold text-center tracking-wide">
-            volunteer form
-          </h3>
-          <div className="doodle flex justify-center">
-            <img
-              src="/img/doodle.png"
-              alt="bone doodle"
-              className="w-32 mt-7"
-            />
-          </div>
-
-          <div className="">
-            <p className="text-3xl md:text-5xl tracking-wide text-center font-bold uppercase bg-green-300 p-5 rounded-xl text-white my-20 leading-loose">
-              application sent succesfully! ✅ 🐶
-            </p>
-          </div>
-        </div>
-      </>
-    );
-  }
-
   return (
-    <div
-      id="volunteer-form"
-      className="py-20 bg-gradient-to-br from-ds-purple to-ds-light-green font-semibold"
-    >
-      <h3 className="shadow-xl py-5 text-5xl md:text-7xl font-bold text-center tracking-wide">
-        Volunteer Form
-      </h3>
-      <div className="doodle flex justify-center">
-        <img src="/img/doodle.png" alt="doodle" className="w-32 mt-7" />
-      </div>
+    <>
+      <div className="bg-ds-purple p-20">
+        <div className="flex justify-between mt-10 flex-wrap gap-5">
+          <h1 className="text-5xl font-semibold tracking-wide">
+            Volunteering with us
+          </h1>
+          <Link
+            href="/volunteer/volunteer-form"
+            className="border-4 text-2xl rounded-2xl flex justify-center items-center py-2 px-5 font-semibold text-white hover:text-black hover:border-black"
+          >
+            Apply Here 🐾
+          </Link>
+        </div>
 
-      <div className="form-container grid md:grid-cols-6 md:my-20 mx-6 md:mx-0">
-        <div className="col-span-4 col-start-2">
-          <form onSubmit={handleSubmit} className="flex flex-col">
-            <div className="grid md:grid-cols-12 gap-3">
-              <div className="col-span-6">
-                <label htmlFor="name" className="text-xl">
-                  <p className="py-5 text-base">First and last name</p>
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="p-4  rounded-xl border w-full text-xl"
-                  required
-                />
-                <ValidationError
-                  prefix="Name"
-                  field="name"
-                  errors={state.errors}
-                />
-              </div>
-              <div className="col-span-6">
-                <label htmlFor="age" className="text-xl">
-                  <p className="py-5 text-base">Age</p>
-                </label>
-                <input
-                  type="text"
-                  name="message"
-                  id="age"
-                  className="p-4  rounded-xl border w-full text-xl"
-                  required
-                />
-                <ValidationError
-                  prefix="Message"
-                  field="msg"
-                  errors={state.errors}
-                />
-              </div>
-            </div>
-            <div className="grid md:grid-cols-12 gap-3">
-              <div className="col-span-6">
-                <label htmlFor="email" className="text-xl">
-                  <p className="py-5 text-base">Email Address</p>
-                </label>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  className="p-4  rounded-xl border w-full text-xl"
-                  required
-                />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                />
-              </div>
-              <div className="col-span-6">
-                <label htmlFor="phone" className="text-xl">
-                  <p className="py-5 text-base">Contact Number</p>
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  className="p-4  rounded-xl border w-full text-xl"
-                  required
-                />
-                <ValidationError
-                  prefix="Phone"
-                  field="phone"
-                  errors={state.errors}
-                />
-              </div>
-            </div>
-            <p className="py-5 text-2xl">
-              Details -{" "}
-              <span className="font-bold">
-                {" "}
-                Answer the questions below, please 🐶
-              </span>
+        <div className="grid grid-cols-3 mt-20 gap-28 lg:gap-10">
+          <div className="daily-feeds gap-5 flex flex-col items-center col-span-3 lg:col-span-1">
+            <p className="font-semibold border-2 border- p-2 rounded-2xl">
+              Daily support
             </p>
-
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">Will you need accommodation?</p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">
-                Do you have any medical conditions? If yes, please specify.
-              </p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">Occupation </p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">
-                We need help this September when we enclose the sanctuary with
-                fences. Are you available during this month? If so, tell us
-                exactly when. (DD/MM/YYYY) Other availability welcome
-              </p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">
-                Please tell us about any experience you have with dogs, please
-                specify breeds and durations. If you do not have any experience
-                but are passionate about volunteering with us, this is also
-                fine!
-              </p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <label htmlFor="message" className="text-xl">
-              <p className="py-5 text-base">
-                Let us know <i> why </i> you would like to volunteer with
-                Defenceless Souls
-              </p>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="p-4  rounded-xl border w-full text-xl"
-              rows={2}
-              required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-            <p className="text-xl font-bold mt-10 border-2 bg-slate-100 border-yellow-400 p-7 rounded-lg">
-              We would like to highlight that you will be fully responsible for
-              any accidents or medical emergencies that may occur during your
-              time volunteering with Defenceless Souls Dog Rescue. So we need
-              you to confirm you are happy with this. <br /> <br />{" "}
-              <i className="font-normal">
-                {" "}
-                I hereby agree to take full responsibility of all and any
-                accidents or medical emergencies that occur at Defenceless Souls
-                Dog Rescue (Savunmasiz Canlar).
-              </i>
+            <img src="/img/dog-icon.png" alt="Dog Icon" className="w-20" />
+            <h2 className="font-semibold text-xl text-center">
+              Daily feeds and health checks
+            </h2>
+            <p className="text-center">
+              The dogs need to be fed twice a day and their water buckets must
+              be refilled once a day. This includes keeping an eye on our
+              littlest friends, who may get pushed out by the bigger dogs.
             </p>
-            <div className="flex justify-center items-center">
-              <label htmlFor="waiver" className="text-3xl font-bold my-5">
-                Confirm
-              </label>
-              <input
-                type="checkbox"
-                className=" mx-10 p-4 bg-green-100 border-green-300 text-green-500 focus:ring-green-200"
-                name="_optin"
-                id="_optin"
-                required
-              />
-            </div>
-
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                disabled={state.submitting}
-                className="p-6 my-6 max-h-3 text-3xl w-40 tracking-wider rounded-md bg-ds-green uppercase text-white font-semibold flex flex-col items-center justify-center"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+          </div>
+          <div className="supplies gap-5 flex flex-col items-center col-span-3 lg:col-span-1">
+            <p className="font-semibold border-2 border- p-2 rounded-2xl">
+              Daily support
+            </p>
+            <img src="/img/paw-icon.png" alt="Paw Icon" className="w-20" />
+            <h2 className="font-semibold text-xl text-center">
+              Moving and organising supplies/tidying{" "}
+            </h2>
+            <p className="text-center">
+              There's often a lot of food bags and supplies that need to be
+              processed at the rescue. Timur also prepares (controlled) fires to
+              keep the dogs warm at night, as the rescue is entirely outside, so
+              help to prepare these is vital.{" "}
+            </p>
+          </div>
+          <div className="fences gap-5 flex flex-col items-center col-span-3 lg:col-span-1">
+            <p className="font-semibold border-2 border-ds-green p-2 rounded-2xl">
+              Our current mission!
+            </p>
+            <img src="/img/house-icon.png" alt="House Icon" className="w-20" />
+            <h2 className="font-semibold text-xl text-center">
+              Building fences, dog houses and dedicated spaces for puppies and
+              mothers.{" "}
+            </h2>
+            <p className="text-center">
+              We are currently in need of external fences and dedicated nursery
+              spaces for our puppies and their mothers. So if you're prepared to
+              get stuck in with hammer, this will really help and save countless
+              lives!{" "}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
