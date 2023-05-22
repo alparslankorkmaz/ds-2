@@ -22,7 +22,7 @@ export default function form() {
             />
           </div>
 
-          <div className="">
+          <div className="min-h-screen">
             <p className="text-3xl lg:text-5xl tracking-wide text-center font-bold uppercase bg-green-300 p-5 rounded-xl text-white my-20 leading-loose">
               application sent succesfully! ✅ 🐶
             </p>
@@ -46,7 +46,7 @@ export default function form() {
 
       <div className="form-container grid lg:grid-cols-6 lg:my-20 mx-6 lg:mx-0">
         <div className="col-span-4 col-start-2">
-          <form onSubmit={handleSubmit} className="flex flex-col">
+          <form onSubmit={handleSubmit} className="flex flex-col" method="POST">
             <div className="grid lg:grid-cols-12 gap-3">
               <div className="col-span-6">
                 <label htmlFor="name" className="text-xl">
