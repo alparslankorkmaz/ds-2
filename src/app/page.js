@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <main>
       <div className="landing grid grid-cols-10 min-h-screen">
-        <div className="hero-img col-span-10 order-last md:order-first md:col-span-6 bg-hero-img bg-cover min-h-screen"></div>
-        <div className="hero-section pb-20 grid grid-cols-10 col-span-10 md:col-span-4 bg-ds-green">
+        <div className="hero-img col-span-10 order-last lg:order-first lg:col-span-6 bg-hero-img bg-cover min-h-screen"></div>
+        <div className="hero-section pb-20 grid grid-cols-10 col-span-10 lg:col-span-4 bg-ds-green">
           <img
             src="/img/logo.png"
             alt="Defenceless Souls Logo"

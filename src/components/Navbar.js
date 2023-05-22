@@ -23,31 +23,31 @@ export default function Navbar() {
               >
                 <div
                   aria-hidden="true"
-                  className="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"
+                  className="m-auto h-0.5 w-6 rounded bg-ds-green transition duration-300"
                 ></div>
                 <div
                   aria-hidden="true"
-                  className="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"
+                  className="m-auto mt-2 h-0.5 w-6 rounded bg-ds-green transition duration-300"
                 ></div>
               </label>
 
               <div className="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                 <div className="flex flex-col h-full justify-between lg:items-center lg:flex-row">
-                  <ul className="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                  <ul className="px-6 pt-32 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                     <li>
                       <Link
                         href="/"
-                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-cyan-100"
+                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:bg-ds-light-green"
                       >
-                        <span className="relative text-cyan-800">Home</span>
+                        <span className="relative text-ds-green">Home</span>
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/volunteer"
-                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-ds-light-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
                       >
-                        <span className="relative group-hover:text-cyan-800">
+                        <span className="relative group-hover:text-ds-green">
                           Volunteer
                         </span>
                       </Link>
@@ -55,29 +55,29 @@ export default function Navbar() {
                     <li>
                       <Link
                         href="/support-us"
-                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-ds-light-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
                       >
-                        <span className="relative group-hover:text-cyan-800">
+                        <span className="relative group-hover:text-ds-green">
                           Support us
                         </span>
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/how-we-help"
-                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+                        href="/meet-our-team"
+                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-ds-light-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
                       >
-                        <span className="relative group-hover:text-cyan-800">
-                          How we help
+                        <span className="relative group-hover:text-ds-green">
+                          Meet our team
                         </span>
                       </Link>
                     </li>
                     <li>
                       <Link
                         href="/about"
-                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
+                        className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-ds-light-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
                       >
-                        <span className="relative group-hover:text-cyan-800">
+                        <span className="relative group-hover:text-ds-green">
                           About
                         </span>
                       </Link>
