@@ -54,11 +54,11 @@ export default function Navbar() {
                     </li>
                     <li>
                       <Link
-                        href="/support-us"
+                        href="/donate"
                         className="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-ds-light-green before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100"
                       >
                         <span className="relative group-hover:text-ds-green">
-                          Support us
+                          Donate
                         </span>
                       </Link>
                     </li>
