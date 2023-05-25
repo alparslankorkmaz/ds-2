@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function volunteer() {
   return (
     <>
-      <div className="bg-ds-purple p-20">
+      <div className="bg-ds-purple py-20 px-10 lg:p-20 lg:min-h-screen">
         <div className="flex justify-between mt-10 flex-wrap gap-5">
           <h1 className="text-5xl font-semibold tracking-wide">
             Volunteering with us

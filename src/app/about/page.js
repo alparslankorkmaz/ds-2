@@ -7,7 +7,7 @@ export default function about() {
         <div className="about-text col-span-2 lg:col-span-1 bg-ds-green p-5 min-h-screen flex flex-col justify-center items-center">
           <div className="px-5">
             <div className="grid grid-cols-4 gap-5 mb-10">
-              <h1 className="text-3xl col-span-2 lg:text-4xl text-white my-10 ">
+              <h1 className="text-3xl col-span-2 lg:text-4xl text-white lg:my-10 ">
                 Meet Timur,{" "}
                 <span className="text-ds-light-green">
                   {" "}
@@ -17,7 +17,7 @@ export default function about() {
               <img
                 src="/img/about-img.jpg"
                 alt="Timur holding a puppy"
-                className="rounded-b-full col-span-4 lg:col-span-2 order-first lg:order-last"
+                className="rounded-b-full col-span-4 lg:col-span-2 order-first lg:order-last mt-20 lg:mt-0"
               />
             </div>
             <p className="text-ds-light-green text-lg mb-10 lg:mb-0">
