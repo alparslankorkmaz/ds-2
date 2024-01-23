@@ -3,8 +3,8 @@ import React from "react";
 export default function meetOurTeam() {
   return (
     <>
-      <div className="bg-ds-light-green grid grid-cols-2 justify-center items-center p-5 md:gap-20">
-        <h1 className="col-span-2 md:col-span-1 font-extralight text-6xl p-20">
+      <div className="min-h-screen bg-ds-light-green grid grid-cols-2 justify-center items-center p-5 md:gap-20">
+        <h1 className="col-span-2 md:col-span-1 font-extralight text-6xl md:p-20">
           Meet Our Rescue Leaders
           <span className="text-lg block">(work in progress)</span>
         </h1>

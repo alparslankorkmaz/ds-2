@@ -9,7 +9,7 @@ export default function Home() {
             alt="Defenceless Souls Logo"
             className="col-span-4 col-start-4 mt-24"
           />
-          <div className=" col-start-2 col-span-8 grid gap-5 pb-10">
+          <div className=" md:col-start-2 col-span-10 md:col-span-8 grid gap-5 pb-10">
             <h1 className="text-5xl text-white">
               Our four-legged friends need your help
             </h1>

@@ -7,7 +7,7 @@ export default function about() {
         <div className="about-text col-span-2 lg:col-span-1 bg-ds-green p-5 min-h-screen flex flex-col justify-center items-center">
           <div className="px-5">
             <div className="grid grid-cols-4 gap-5 mb-10">
-              <h1 className="text-3xl col-span-2 lg:text-4xl text-white lg:my-10 ">
+              <h1 className="text-3xl col-span-4 md:col-span-2 lg:text-4xl text-white lg:my-10 ">
                 Meet Timur,{" "}
                 <span className="text-ds-light-green">
                   {" "}

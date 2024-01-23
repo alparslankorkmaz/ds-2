@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function support() {
   return (
     <>
-      <div className="bg-ds-green min-h-screen grid grid-cols-2 p-20 gap-20 md:gap-0">
+      <div className="bg-ds-green min-h-screen grid grid-cols-2 p-5 md:p-20 gap-20 md:gap-0">
         <div className="grid gap-5 grid-cols-2 text col-span-2 md:col-span-1 text-white">
           <h1 className="col-span-2 lg:col-span-1 text-5xl mt-10">
             How You Can Help
